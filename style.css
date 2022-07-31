@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%; /*100% -> 16px, alors 10px -> 62.5%*/
+  
+    /* Variables contenant les couleurs*/
+    --couleur-primaire: #c92a2a;
+    --titre: #061800;
+    --paragraphe: #384633;
+  }
+  
+  body {
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+  
+    text-align: center;
+  }
+  
+  header {
+    margin-top: 4.1rem;
+    width: 37.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  h4 {
+    font-size: 1.6rem;
+    color: var(--couleur-primaire);
+    margin-bottom: 1.6rem;
+  }
+  
+  h1 {
+    font-size: 3.4rem;
+    color: var(--titre);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+  }
+  
+  p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--paragraphe);
+    margin-bottom: 3.2rem;
+  }
+  
+  button {
+    background-color: var(--couleur-primaire);
+  
+    border: none;
+    border-radius: 4rem;
+  
+    margin-bottom: 4rem;
+  
+    height: 4.2rem;
+    width: 26.3rem;
+  
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+  
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  img {
+    width: 33rem;
+  }
+  
