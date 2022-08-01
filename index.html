@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les Héliotropes</title>
+
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,11 +62,21 @@
           </ul>
         </div>
 
-        <button onclick="ouvrirMenu()" class="ouvrir-menu">
-          <img src="/assets/menu_red.png" alt="ouvrir-menu" />
+        <button
+          aria-expanded="false"
+          aria-label="Ouvrir menu"
+          onclick="onMenu()"
+          class="ouvrir-menu"
+        >
+          <img src="/assets/menu_red.png" alt="ouvrir-menu" class="open" />
         </button>
-        <button onclick="fermerMenu()" class="fermer-menu">
-          <img src="/assets/fermer_menu.png" alt="fermer-menu" />
+        <button
+          aria-expanded="true"
+          aria-label="Fermer menu"
+          onclick="onMenu()"
+          class="fermer-menu"
+        >
+          <img src="/assets/fermer_menu_white.png" alt="fermer-menu" />
         </button>
       </div>
     </nav>

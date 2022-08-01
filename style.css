@@ -39,6 +39,9 @@ body {
   width: 37.5rem;
   margin-right: auto;
   margin-left: auto;
+
+  padding-left: 2.4rem;
+  padding-bottom: 2.4rem;
 }
 
 ul {
@@ -74,6 +77,7 @@ header h1 {
   font-size: 3.4rem;
   color: var(--titre);
   line-height: 130%;
+
   margin-bottom: 2.4rem;
 }
 
@@ -81,6 +85,7 @@ header p {
   font-size: 1.8rem;
   line-height: 150%;
   color: var(--paragraphe);
+
   margin-bottom: 3.2rem;
 }
 
@@ -92,11 +97,11 @@ header button {
 
   margin-bottom: 4rem;
 
-  height: 4.2rem;
+  height: 6.2rem;
   width: 26.3rem;
 
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -134,7 +139,7 @@ header img {
   gap: 6rem;
 }
 
-.infos h3 {
+.info h3 {
   font-size: 4.8rem;
   color: var(--titre);
   line-height: 130%;
@@ -171,13 +176,15 @@ nav .emballage {
 nav.scroll {
   background: var(--couleur-primaire);
   width: 100vw;
+  position: fixed;
+  top: 0;
 }
 
 nav.scroll .logo img {
   content: url('/assets/logo_white.png');
 }
 
-nav.scroll button img {
+nav.scroll button img.open {
   content: url('/assets/menu_white.png');
 }
 
@@ -269,15 +276,11 @@ body.menu-etendu nav {
 }
 
 body.menu-etendu .logo,
-body.menu-etendu button img {
+body.menu-etendu button {
   position: relative;
   z-index: 100;
 }
 
 body.menu-etendu .logo img {
   content: url('/assets/logo_white.png');
-}
-
-body.menu-etendu button img {
-  content: url('/assets/fermer_menu_white.png');
 }
