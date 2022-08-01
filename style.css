@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,17 +20,29 @@
   --nav-height: 7.2rem;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'DM Sans';
   font-size: 1.6rem;
 
   text-align: center;
+
+  overflow: overlay;
 }
 
 .emballage {
   width: 37.5rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 /*------- HEADER -------*/
@@ -40,7 +53,7 @@ header {
 
 header::before {
   content: '';
-  width: 100vw;
+  width: 100%;
   height: calc(87rem + var(--nav-height));
   background-color: var(--bordure-light);
   display: block;
@@ -140,8 +153,6 @@ header img {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   height: var(--nav-height);
 
@@ -149,4 +160,124 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+nav .emballage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll {
+  background: var(--couleur-primaire);
+  width: 100vw;
+}
+
+nav.scroll .logo img {
+  content: url('/assets/logo_white.png');
+}
+
+nav.scroll button img {
+  content: url('/assets/menu_white.png');
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*------- MENU ETENDU -------*/
+
+body.menu-etendu {
+  overflow: hidden;
+}
+
+body.menu-etendu > :not(nav) {
+  display: none;
+}
+
+.menu,
+.fermer-menu,
+body.menu-etendu .ouvrir-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-etendu .menu,
+body.menu-etendu .fermer-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-etendu .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--couleur-primaire);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-height);
+}
+
+body.menu-etendu nav {
+  position: relative;
+}
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu .button {
+  background: white;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--couleur-primaire);
+
+  display: inline-block;
+  padding: 16px 32px;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+body.menu-etendu .logo,
+body.menu-etendu button img {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-etendu .logo img {
+  content: url('/assets/logo_white.png');
+}
+
+body.menu-etendu button img {
+  content: url('/assets/fermer_menu_white.png');
 }
