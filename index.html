@@ -17,15 +17,15 @@
   <body onscroll="scroller()" class="">
     <nav id="naviguer" class="">
       <div class="emballage">
-        <a class="logo" href="#">
+        <a onclick="onMenu()" class="logo" href="#home">
           <img src="/assets/logo_red.png" alt="logo" />
         </a>
 
         <div class="menu">
           <ul>
-            <li><a href="#">Présentation</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a onclick="onMenu()" href="#home">Présentation</a></li>
+            <li><a onclick="onMenu()" href="#description">Description du logement</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
 
           <a href="#" class="button">Faites votre demande de logement </a>
@@ -81,7 +81,9 @@
       </div>
     </nav>
 
-    <header class="emballage">
+    <header id="home">
+
+      <div class="emballage">
       <h4>RÉSIDENCE UNIVERSITAIRE</h4>
 
       <h1>Décrouvez notre résidence, sur le campus d'Illkirch</h1>
@@ -113,8 +115,66 @@
           <p>De l'arrêt du TRAM</p>
         </div>
       </div>
+    </div>
     </header>
 
+    <section id="description">
+      <div class="emballage">
+      <header>
+        <h4>Description du logement</h4>
+        <h2>Vous trouverez plus d'informations sur la résidence</h2>
+      </header>
+
+      <div class="cartes">
+
+        <div class="carte">
+        <img src="/assets/check.png" alt="" />
+        <h3>Type de logement</h3>
+        <p>Studio - Kitchenette et salle de Bain <br/>
+        Surface: 18 m <sup>2</sup> <br/>
+        2 bâtiments de 3 étages sans ascenseurs</p>
+
+       </div>
+
+       <div class="carte">
+        <img src="/assets/check.png" alt="" />
+        <h3>Loyer</h3>
+        <p>359€, charges et connexion internet (possibilité de bénéficier de l'APL)</p>
+
+       </div>
+
+       <div class="carte">
+        <img src="/assets/check.png" alt="" />
+        <h3>Services</h3>
+        <p>Connexion Internet<br/>
+          Parking à vélos et internet<br/>
+          Laverie<br/>
+          Digicode<br/>
+          Accès aux salles de travail, sport et détente (Résidence Les Alternants)<br/>
+          Distributeur de boissons et encas<br/></p>
+
+       </div>
+
+       <div class="carte">
+        <img src="/assets/check.png" alt="" />
+        <h3>Localisation</h3>
+        <p> Sur le campus d'Illkirch à côté de la faculté de Pharmacie, de l'IUT Robert Schuman, de l'usine-école EASE, Télécom Physique, école supérieure de biothechnologie, et à 30 mn en tram du campus de l'Esplanade</p>
+
+       </div>
+
+       <div class="carte">
+        <img src="/assets/check.png" alt="" />
+        <h3>Accès</h3>
+        <p>Bus 2, 7, 62, 63, 65 et 66 - Arrêt Campus d'Illkirch<br /></p>
+        Tram A et E - Arrêt Campus d'Illkirch</p>
+
+       </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Libraire -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -17,7 +17,13 @@
   --bordure-beige: #fff5f5;
   --bordure-light: #ffe3e3;
 
+  --bg-light: #fff5f5;
+
   --nav-height: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -33,13 +39,14 @@ body {
   text-align: center;
 
   overflow: overlay;
+
+  background-color: var(--bg-light);
 }
 
 .emballage {
   width: 37.5rem;
   margin-right: auto;
   margin-left: auto;
-
   padding-left: 2.4rem;
 }
 
@@ -47,13 +54,18 @@ ul {
   list-style: none;
 }
 
-/*------- HEADER -------*/
-
-header {
-  margin-top: calc(4.1rem + var(--nav-height));
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-header::before {
+/*------- Home -------*/
+
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#home::before {
   content: '';
   width: 100%;
   height: calc(87rem + var(--nav-height));
@@ -66,13 +78,13 @@ header::before {
   z-index: -1;
 }
 
-header h4 {
+#home h4 {
   font-size: 1.6rem;
   color: var(--couleur-primaire);
   margin-bottom: 1.6rem;
 }
 
-header h1 {
+#home h1 {
   font-size: 3.4rem;
   color: var(--titre);
   line-height: 130%;
@@ -80,7 +92,7 @@ header h1 {
   margin-bottom: 2.4rem;
 }
 
-header p {
+#home p {
   font-size: 1.8rem;
   line-height: 150%;
   color: var(--paragraphe);
@@ -88,7 +100,7 @@ header p {
   margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
   background-color: var(--couleur-primaire);
 
   border: none;
@@ -113,7 +125,7 @@ header button {
   margin-left: auto;
 }
 
-header img {
+#home img {
   width: 32rem;
   display: block;
   margin-right: auto;
@@ -121,7 +133,7 @@ header img {
   object-position: 0 0.2rem;
 }
 
-.infos {
+#home .infos {
   width: 32.7rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -138,7 +150,7 @@ header img {
   gap: 6rem;
 }
 
-.info h3 {
+#home .info h3 {
   font-size: 4.8rem;
   color: var(--titre);
   line-height: 130%;
@@ -146,7 +158,7 @@ header img {
   margin-bottom: 0.4rem;
 }
 
-.info p {
+#home .info p {
   margin: 0;
   color: var(--couleur-primaire);
   font-size: 1.6rem;
@@ -162,8 +174,9 @@ nav {
 
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100vw;
+
+  z-index: 100;
 }
 
 nav .emballage {
@@ -175,8 +188,6 @@ nav .emballage {
 nav.scroll {
   background: var(--couleur-primaire);
   width: 100vw;
-  position: fixed;
-  top: 0;
 }
 
 nav.scroll .logo img {
@@ -200,7 +211,7 @@ body.menu-etendu {
 }
 
 body.menu-etendu > :not(nav) {
-  display: none;
+  visibility: hidden;
 }
 
 .menu,
@@ -216,6 +227,10 @@ body.menu-etendu .fermer-menu {
   visibility: visible;
 }
 
+.menu {
+  transform: translateY(100%);
+}
+
 body.menu-etendu .menu {
   position: fixed;
   top: 0;
@@ -226,10 +241,10 @@ body.menu-etendu .menu {
   height: 100vh;
 
   padding-top: var(--nav-height);
-}
 
-body.menu-etendu nav {
-  position: relative;
+  transition: transform 350ms;
+
+  transform: translateY(0);
 }
 
 .menu ul:nth-child(1) {
@@ -282,4 +297,48 @@ body.menu-etendu button {
 
 body.menu-etendu .logo img {
   content: url('/assets/logo_white.png');
+}
+
+/*------- Description du logement -------*/
+
+#description header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+
+  color: var(--couleur-primaire);
+
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+#description header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--titre);
+
+  margin-bottom: 6rem;
+}
+
+#description .cartes {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#description .carte {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--bordure-light);
+  border-radius: 0.6rem;
+}
+
+#description .carte h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
