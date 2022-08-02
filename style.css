@@ -59,32 +59,26 @@ section {
   padding-bottom: 10rem;
 }
 
-/*------- Home -------*/
-
-#home {
-  padding-top: calc(4.1rem + var(--nav-height));
-}
-
-#home::before {
-  content: '';
-  width: 100%;
-  height: calc(87rem + var(--nav-height));
-  background-color: var(--bordure-light);
-  display: block;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-#home h4 {
+section header h4 {
   font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
   color: var(--couleur-primaire);
+
+  text-transform: uppercase;
+
   margin-bottom: 1.6rem;
 }
 
-#home h1 {
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--titre);
+}
+
+section header h1 {
   font-size: 3.4rem;
   color: var(--titre);
   line-height: 130%;
@@ -92,77 +86,12 @@ section {
   margin-bottom: 2.4rem;
 }
 
-#home p {
-  font-size: 1.8rem;
-  line-height: 150%;
-  color: var(--paragraphe);
-
-  margin-bottom: 3.2rem;
-}
-
-#home button {
-  background-color: var(--couleur-primaire);
-
-  border: none;
-  border-radius: 4rem;
-
-  margin-bottom: 4rem;
-
-  height: 6.2rem;
-  width: 26.3rem;
-
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#home img {
-  width: 32rem;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  object-position: 0 0.2rem;
-}
-
-#home .infos {
-  width: 32.7rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-right: auto;
-  margin-left: auto;
-
-  background-color: var(--bordure-beige);
-  border: 1px solid var(--bordure-light);
-  border-radius: 0.6rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6rem;
-}
-
-#home .info h3 {
-  font-size: 4.8rem;
-  color: var(--titre);
-  line-height: 130%;
-
-  margin-bottom: 0.4rem;
-}
-
-#home .info p {
-  margin: 0;
-  color: var(--couleur-primaire);
+section .contenu p {
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
+
+  color: var(--paragraphe);
 }
 
 /*------- NAVIGATION -------*/
@@ -299,26 +228,101 @@ body.menu-etendu .logo img {
   content: url('/assets/logo_white.png');
 }
 
-/*------- Description du logement -------*/
+/*------- Home -------*/
 
-#description header h4 {
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: 0.08rem;
-
-  color: var(--couleur-primaire);
-
-  text-transform: uppercase;
-
-  margin-bottom: 1.6rem;
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
-#description header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
+#home::before {
+  content: '';
+  width: 100%;
+  height: calc(87rem + var(--nav-height));
+  background-color: var(--bordure-light);
+  display: block;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#home p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: var(--paragraphe);
+
+  margin-bottom: 3.2rem;
+}
+
+#home button {
+  background-color: var(--couleur-primaire);
+
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 4rem;
+
+  height: 6.2rem;
+  width: 26.3rem;
+
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#home img {
+  width: 32rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  object-position: 0 0.2rem;
+}
+
+#home .infos {
+  width: 32.7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--bordure-beige);
+  border: 1px solid var(--bordure-light);
+  border-radius: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#home .info h3 {
+  font-size: 4.8rem;
   color: var(--titre);
+  line-height: 130%;
 
+  margin-bottom: 0.4rem;
+}
+
+#home .info p {
+  margin: 0;
+  color: var(--couleur-primaire);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+/*------- Description du logement -------*/
+
+#description header h2 {
   margin-bottom: 6rem;
 }
 
@@ -341,4 +345,25 @@ body.menu-etendu .logo img {
 #description .carte h3 {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
+}
+
+/*------- Vivre en Cité U' -------*/
+
+#citeu img {
+  max-width: 100%;
+}
+
+#citeu {
+  text-align: left;
+
+  background-color: var(--bordure-beige);
+}
+
+#citeu header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#citeu .contenu p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
 }

@@ -25,7 +25,7 @@
           <ul>
             <li><a onclick="onMenu()" href="#home">Présentation</a></li>
             <li><a onclick="onMenu()" href="#description">Description du logement</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a onclick="onMenu()" href="#citeu">Vivre en Cité U'</a></li>
           </ul>
 
           <a href="#" class="button">Faites votre demande de logement </a>
@@ -81,24 +81,31 @@
       </div>
     </nav>
 
-    <header id="home">
+    <section id="home">
 
       <div class="emballage">
-      <h4>RÉSIDENCE UNIVERSITAIRE</h4>
+        <header>
 
-      <h1>Décrouvez notre résidence, sur le campus d'Illkirch</h1>
+          <h4>RÉSIDENCE UNIVERSITAIRE</h4>
+          <h1>Décrouvez notre résidence, sur le campus d'Illkirch</h1>
 
-      <p>
-        Vous y retrouverez des studios de 18 m<sup>2</sup> à proximité du Campus
-        d'Illkirch et du centre commercial Baggersee
-      </p>
+        </header>
 
-      <button>Faites votre demande de logement</button>
+        <div class="contenu">
 
-      <img
-        src="/assets/Image_résidence.png"
-        alt="Photo de la résidence les Héliotropes"
-      />
+          <p>
+            Vous y retrouverez des studios de 18 m<sup>2</sup> à proximité du Campus
+            d'Illkirch et du centre commercial Baggersee
+          </p>
+    
+          <button>Faites votre demande de logement</button>
+    
+          <img
+            src="/assets/Image_résidence.png"
+            alt="Photo de la résidence les Héliotropes"
+          />
+        </div>
+     
 
       <div class="infos">
         <div class="info">
@@ -116,7 +123,7 @@
         </div>
       </div>
     </div>
-    </header>
+    </section>
 
     <section id="description">
       <div class="emballage">
@@ -125,52 +132,75 @@
         <h2>Vous trouverez plus d'informations sur la résidence</h2>
       </header>
 
-      <div class="cartes">
+      <div class="contenu">
 
-        <div class="carte">
-        <img src="/assets/check.png" alt="" />
-        <h3>Type de logement</h3>
-        <p>Studio - Kitchenette et salle de Bain <br/>
-        Surface: 18 m <sup>2</sup> <br/>
-        2 bâtiments de 3 étages sans ascenseurs</p>
+        <div class="cartes">
 
-       </div>
-
-       <div class="carte">
-        <img src="/assets/check.png" alt="" />
-        <h3>Loyer</h3>
-        <p>359€, charges et connexion internet (possibilité de bénéficier de l'APL)</p>
-
-       </div>
-
-       <div class="carte">
-        <img src="/assets/check.png" alt="" />
-        <h3>Services</h3>
-        <p>Connexion Internet<br/>
-          Parking à vélos et internet<br/>
-          Laverie<br/>
-          Digicode<br/>
-          Accès aux salles de travail, sport et détente (Résidence Les Alternants)<br/>
-          Distributeur de boissons et encas<br/></p>
-
-       </div>
-
-       <div class="carte">
-        <img src="/assets/check.png" alt="" />
-        <h3>Localisation</h3>
-        <p> Sur le campus d'Illkirch à côté de la faculté de Pharmacie, de l'IUT Robert Schuman, de l'usine-école EASE, Télécom Physique, école supérieure de biothechnologie, et à 30 mn en tram du campus de l'Esplanade</p>
-
-       </div>
-
-       <div class="carte">
-        <img src="/assets/check.png" alt="" />
-        <h3>Accès</h3>
-        <p>Bus 2, 7, 62, 63, 65 et 66 - Arrêt Campus d'Illkirch<br /></p>
-        Tram A et E - Arrêt Campus d'Illkirch</p>
-
-       </div>
+          <div class="carte">
+          <img src="/assets/check.png" alt="" />
+          <h3>Type de logement</h3>
+          <p>Studio - Kitchenette et salle de Bain <br/>
+          Surface: 18 m <sup>2</sup> <br/>
+          2 bâtiments de 3 étages sans ascenseurs</p>
+  
+         </div>
+  
+         <div class="carte">
+          <img src="/assets/check.png" alt="" />
+          <h3>Loyer</h3>
+          <p>359€, charges et connexion internet (possibilité de bénéficier de l'APL)</p>
+  
+         </div>
+  
+         <div class="carte">
+          <img src="/assets/check.png" alt="" />
+          <h3>Services</h3>
+          <p>Connexion Internet<br/>
+            Parking à vélos et internet<br/>
+            Laverie<br/>
+            Accès aux salles de travail, sport et détente (Résidence Les Alternants)<br/>
+            Distributeur de boissons et encas<br/></p>
+  
+         </div>
+  
+         <div class="carte">
+          <img src="/assets/check.png" alt="" />
+          <h3>Localisation</h3>
+          <p> Sur le campus d'Illkirch à côté de la faculté de Pharmacie, de l'IUT Robert Schuman, de l'usine-école EASE, Télécom Physique, école supérieure de biothechnologie, et à 30 mn en tram du campus de l'Esplanade</p>
+  
+         </div>
+  
+         <div class="carte">
+          <img src="/assets/check.png" alt="" />
+          <h3>Accès</h3>
+          <p>Bus 2, 7, 62, 63, 65 et 66 - Arrêt Campus d'Illkirch<br /></p>
+          Tram A et E - Arrêt Campus d'Illkirch</p>
+  
+         </div>
+        </div>
       </div>
+     
     </div>
+    </section>
+
+    <section id="citeu">
+      <div class="emballage">
+        <header>
+          <h4>Vivre en Cité U'</h4>
+          <h2>La vie en Cité U', c'est comment?</h2>
+        </header>
+
+        <div class="contenu">
+          <p>
+            La première chose à savoir dans le monde de la cité U, c’est que certes, ces logements sont adaptés aux budgets serrés des étudiants, mais la surface suit aussi cette logique.
+            Vivre en cité U, c’est aussi le choix de la vie en communauté. Pour les petits nouveaux en ville, ça permet de faire de belles connaissances et de se construire un joli réseau d’amis étudiants.
+            Au final, la vie en cité U est une véritable expérience et elle mérite d’être vécue. À proximité de vos facs et autres écoles, en communauté avec vos amis et ou camarades, c’est une valeur sûre pour beaucoup !
+          </p>
+
+          <img src="/assets/cité_u.jpg" alt="">
+        </div>
+      </div>
+
     </section>
 
     <!-- Libraire -->

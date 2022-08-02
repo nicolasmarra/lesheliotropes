@@ -18,5 +18,8 @@ ScrollReveal({
 #home img, 
 #home .infos, 
 #description,
-#description header
-#description .carte`)
+#description header,
+#description .carte,
+#citeu,
+#citeu header,
+#citeu .contenu`)
