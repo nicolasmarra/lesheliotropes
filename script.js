@@ -1,6 +1,18 @@
+window.addEventListener('scroll', scroller)
+scroller()
 function scroller() {
-  if (scrollY > 0) naviguer.classList.add('scroll')
+  afficherScroll()
+  backToTop()
+}
+
+function afficherScroll() {
+  if (scrollY != 0) naviguer.classList.add('scroll')
   else naviguer.classList.remove('scroll')
+}
+
+function backToTop() {
+  if (scrollY > 400) backToTopButton.classList.add('show')
+  else backToTopButton.classList.remove('show')
 }
 
 function onMenu() {
