@@ -1,4 +1,4 @@
-/*------- GENERAL -------*/
+/*------- Général -------*/
 
 * {
   margin: 0;
@@ -45,10 +45,12 @@ body {
 }
 
 .emballage {
-  width: 37.5rem;
+  width: min(50rem, 100%);
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 ul {
@@ -61,7 +63,7 @@ section {
 }
 
 section header h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.08rem;
@@ -101,7 +103,7 @@ section .contenu p {
   border: none;
   border-radius: 4rem;
 
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 
   padding: 1.6rem 3.2rem;
   width: fit-content;
@@ -171,6 +173,11 @@ nav button {
   cursor: pointer;
 }
 
+nav .menu,
+nav .fermer-menu {
+  position: fixed;
+}
+
 /*------- MENU ETENDU -------*/
 
 body.menu-etendu {
@@ -199,7 +206,6 @@ body.menu-etendu .fermer-menu {
 }
 
 body.menu-etendu .menu {
-  position: fixed;
   top: 0;
   left: 0;
   background: var(--couleur-primaire);
@@ -293,6 +299,7 @@ body.menu-etendu .logo img {
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
+  font-weight: 400;
   color: var(--paragraphe);
 
   margin-bottom: 3.2rem;
@@ -308,6 +315,8 @@ body.menu-etendu .logo img {
 
 #home .infos {
   width: 32.7rem;
+
+  width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-right: auto;
