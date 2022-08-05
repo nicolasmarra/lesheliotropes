@@ -161,11 +161,11 @@ nav.scroll {
 }
 
 nav.scroll .logo img {
-  content: url('./assets/logo_white.png');
+  content: url('assets/logo_white.png');
 }
 
 nav.scroll button img.open {
-  content: url('./assets/menu_white.png');
+  content: url('assets/menu_white.png');
 }
 
 nav button {
@@ -270,7 +270,7 @@ body.menu-etendu button {
 }
 
 body.menu-etendu .logo img {
-  content: url('./assets/logo_white.png');
+  content: url('assets/logo_white.png');
 }
 
 /*------- Home -------*/
@@ -445,7 +445,7 @@ footer .logo {
 }
 
 footer .logo img {
-  content: url('./assets/logo_big.png');
+  content: url('assets/logo_big.png');
 
   width: 23.6rem;
   height: 3.1rem;
@@ -680,7 +680,7 @@ footer .social-links {
   }
 
   body.menu-etendu .logo img {
-    content: url('./assets/logo_red.png');
+    content: url('assets/logo_red.png');
   }
 
   /*------- Description -------*/
