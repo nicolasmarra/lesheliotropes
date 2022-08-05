@@ -1,6 +1,6 @@
 # lesheliotropes
 
-Une landing page moderne et responsive en HTML, CSS et JavaScript pour une résidence universitaire. <br/>
+Une landing page <strong>moderne</strong> et <strong>responsive</strong> en <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong> pour une résidence universitaire. <br/>
 Vous pouvez la consulter ici. 
 
 ## Landing Page
