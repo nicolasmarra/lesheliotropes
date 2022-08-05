@@ -422,6 +422,11 @@ body.menu-etendu .logo img {
   gap: 0.8rem;
 }
 
+#demande ul li a {
+  text-decoration: none;
+}
+
+
 #demande img {
   max-width: 100%;
   border-radius: 1rem;
